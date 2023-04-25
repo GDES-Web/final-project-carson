@@ -3,7 +3,11 @@
 @import 'components/buttons';
 @import 'components/forms';
 @import 'pages/home';
+@import './components/nav';
 
-body {
-    font-family: $font-family;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $fonts;
 }
