@@ -1,6 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 .navigation {
+  width: 100%;
+  z-index: 2;
   background-color: #3a3153;
+  position: relative;
 }
 
 .nav-container {
@@ -15,20 +18,50 @@ ul {
 
 li {
   padding: 10px;
-  text-decoration: none;
   list-style-type: none;
 }
 
-a {
+.nav-link {
   color: #fffdfa;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
-* {
+#logo {
+  font-size: 3rem;
+}
+
+.brand {
+  padding-bottom: 10px;
+}
+
+*, :before, :after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Fira Sans, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-list {
+  padding-right: 3rem;
+}
+
+.brand {
+  padding-left: 3rem;
+}
+
+.hero {
+  height: 100vh;
+  z-index: 1;
+  background-image: url("deadline.c8591050.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: -300px;
+  position: relative;
 }
 
 /*# sourceMappingURL=index.f3b972e4.css.map */
