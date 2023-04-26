@@ -38,6 +38,7 @@ li {
   padding-bottom: 10px;
 }
 
+/* @import '/src/*'; */
 *,
 *:before,
 *:after {
@@ -50,6 +51,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "Fira Sans", sans-serif;
 }
 
 /* Nav */
