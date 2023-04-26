@@ -1,4 +1,39 @@
 @import "https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+.btnsec {
+  padding: 50px;
+}
+
+.btn {
+  cursor: pointer;
+  outline-offset: 4px;
+  background: #005858;
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  display: inline-block;
+}
+
+.front {
+  color: #fff;
+  background: teal;
+  border-radius: 12px;
+  padding: 12px 42px;
+  font-size: 1.25em;
+  display: block;
+  transform: translateY(-6px);
+}
+
+.button:active {
+  background-color: #ec5994;
+}
+
+@media (width <= 30em) {
+  .button {
+    margin: .4em auto;
+    display: block;
+  }
+}
+
 .navigation {
   width: 100%;
   z-index: 2;
@@ -33,6 +68,10 @@ li {
 
 .brand {
   padding-bottom: 10px;
+}
+
+.hero {
+  padding-bottom: 300px;
 }
 
 *, :before, :after {

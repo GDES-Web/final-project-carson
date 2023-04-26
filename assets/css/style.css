@@ -2,6 +2,43 @@
 /* fonts */
 /* colors */
 /* Links */
+/* Button Style */
+.btnsec {
+  padding: 50px;
+}
+
+.btn {
+  background: rgb(0, 88, 88);
+  display: inline-block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25em;
+  background: teal;
+  color: white;
+  transform: translateY(-6px);
+}
+
+/* Active Button State */
+.button:active {
+  background-color: rgb(236, 89, 148);
+}
+
+/* responsive media */
+@media all and (max-width: 30em) {
+  .button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
 .navigation {
   background-color: #3a3153;
   width: 100%;
@@ -36,6 +73,10 @@ li {
 
 .brand {
   padding-bottom: 10px;
+}
+
+.hero {
+  padding-bottom: 300px;
 }
 
 /* @import '/src/*'; */
