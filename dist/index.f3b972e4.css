@@ -36,8 +36,7 @@
 
 .navigation {
   width: 100%;
-  z-index: 2;
-  background-color: #3a3153;
+  background-color: #fffdfa;
   position: relative;
 }
 
@@ -57,17 +56,19 @@ li {
 }
 
 .nav-link {
-  color: #fffdfa;
+  color: #000;
+  margin-top: 0;
   font-size: 1.5rem;
   text-decoration: none;
+  transition: color .2s ease-in-out;
 }
 
-#logo {
-  font-size: 3rem;
+.nav-link:hover {
+  color: #f29f02;
 }
 
 .brand {
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .hero {
@@ -90,18 +91,37 @@ html, body {
   padding-right: 3rem;
 }
 
-.brand {
-  padding-left: 3rem;
-}
-
 .hero {
-  height: 100vh;
-  z-index: 1;
+  background-color: #fff0;
   background-image: url("deadline.1da1b135.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -300px;
+  align-items: center;
+  display: flex;
   position: relative;
+}
+
+.hero-section-text {
+  color: #fff;
+  z-index: 2;
+  background-color: #00000080;
+  padding: 20px;
+  position: relative;
+  top: 50%;
+}
+
+.logo-container {
+  width: 260px;
+  height: 57px;
+  background-image: url("slicehaus.c45ac383.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-color .2s ease-in-out;
+}
+
+.logo-container:hover {
+  background-color: #f29f02;
 }
 
 /*# sourceMappingURL=index.f3b972e4.css.map */
