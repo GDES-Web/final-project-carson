@@ -38,12 +38,17 @@
   width: 100%;
   background-color: #fffdfa;
   position: relative;
+  box-shadow: 0 2px 4px #0003;
 }
 
 .nav-container {
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+.nav-list {
+  padding-right: 3rem;
 }
 
 ul {
@@ -56,7 +61,7 @@ li {
 }
 
 .nav-link {
-  color: #000;
+  color: #333e40;
   margin-top: 0;
   font-size: 1.5rem;
   text-decoration: none;
@@ -71,8 +76,22 @@ li {
   padding: 10px;
 }
 
+svg {
+  height: 56px;
+}
+
 .hero {
+  height: 700px;
+  z-index: 1;
+  background-color: #fff0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
   padding-bottom: 300px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 4px 8px #0003;
 }
 
 *, :before, :after {
@@ -87,41 +106,29 @@ html, body {
   font-family: Fira Sans, sans-serif;
 }
 
-.nav-list {
-  padding-right: 3rem;
-}
-
 .hero {
-  background-color: #fff0;
-  background-image: url("deadline.1da1b135.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  display: flex;
-  position: relative;
+  background-image: url("hero.bb7d8037.png");
 }
 
 .hero-section-text {
   color: #fff;
-  z-index: 2;
   background-color: #00000080;
   padding: 20px;
   position: relative;
   top: 50%;
 }
 
-.logo-container {
-  width: 260px;
-  height: 57px;
-  background-image: url("slicehaus.c45ac383.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: background-color .2s ease-in-out;
+.logo-link {
+  padding: 20px;
 }
 
-.logo-container:hover {
-  background-color: #f29f02;
+.logo-link svg path {
+  fill: #000;
+  transition: fill .2s cubic-bezier(0, .98, .99, -.02);
+}
+
+.logo-link:hover svg path {
+  fill: #f29f02;
 }
 
 /*# sourceMappingURL=index.f3b972e4.css.map */

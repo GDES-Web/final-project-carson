@@ -43,6 +43,7 @@
   background-color: #FFFDFA;
   width: 100%;
   position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -71,6 +72,10 @@
         fill: #F29F02;
     }
 } */
+.nav-list {
+  padding-right: 3rem;
+}
+
 ul {
   display: flex;
 }
@@ -81,7 +86,7 @@ li {
 }
 
 .nav-link {
-  color: black;
+  color: #333E40;
   font-size: 1.5rem;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
@@ -95,8 +100,22 @@ li {
   padding: 10px;
 }
 
+svg {
+  height: 56px;
+}
+
 .hero {
   padding-bottom: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 700px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 *,
@@ -114,43 +133,30 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-/* Nav */
-.nav-list {
-  padding-right: 3rem;
-}
-
 /* Hero */
 .hero {
-  background-color: rgba(255, 255, 255, 0);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../../images/deadline.jpg);
-  position: relative;
-  display: flex;
-  align-items: center;
+  background-image: url(../../images/hero.png);
 }
 
 .hero-section-text {
   color: white;
   position: relative;
   top: 50%;
-  z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
 
-.logo-container {
-  background-image: url(../../images/slicehaus.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 57px;
-  transition: background-color 0.2s ease-in-out;
+.logo-link {
+  padding: 20px;
+  /* Set the initial color of the path */
+  /* Change the color of the path when hovering over the link */
 }
-
-.logo-container:hover {
-  background-color: #F29F02;
+.logo-link svg path {
+  fill: black;
+  transition: fill 0.2s cubic-bezier(0, 0.98, 0.99, -0.02);
+}
+.logo-link:hover svg path {
+  fill: #F29F02;
 }
 
 /*# sourceMappingURL=style.css.map */

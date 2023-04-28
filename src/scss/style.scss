@@ -23,41 +23,33 @@ body {
     font-family: $fonts;
 }
 
-/* Nav */
-.nav-list {
-    padding-right: 3rem;
-}
-
 /* Hero */
 .hero {
-    background-color: rgba(255, 255, 255, 0);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../../images/deadline.jpg);
-    position: relative;
-    display: flex;
-    align-items: center;
+    background-image: url(../../images/hero.png);
 }
 
 .hero-section-text {
     color: white;
     position: relative;
     top: 50%;
-    z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
 
-.logo-container {
-    background-image: url(../../images/slicehaus.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 260px;
-    height: 57px;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.logo-container:hover {
-    background-color: #F29F02;
-}
+.logo-link {
+    padding: 20px;
+    /* Set the initial color of the path */
+    svg path {
+      fill: black;
+      transition: fill 0.2s cubic-bezier(0,.98,.99,-0.02);
+    }
+    
+    /* Change the color of the path when hovering over the link */
+    &:hover {
+      svg path {
+        fill: #F29F02;
+      }
+    }
+  }
+  
+  
