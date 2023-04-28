@@ -40,8 +40,8 @@ body {
     padding: 20px;
     /* Set the initial color of the path */
     svg path {
-      fill: black;
-      transition: fill 0.2s cubic-bezier(0,.98,.99,-0.02);
+      fill: #333E40;
+      transition: fill 0.2s ease-in-out;
     }
     
     /* Change the color of the path when hovering over the link */
