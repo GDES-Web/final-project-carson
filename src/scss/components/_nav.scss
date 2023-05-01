@@ -5,10 +5,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* .logo-link {
