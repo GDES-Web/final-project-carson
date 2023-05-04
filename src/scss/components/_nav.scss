@@ -37,7 +37,9 @@
 } */ 
 
 .nav-list {
-    padding-right: 3rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 ul {

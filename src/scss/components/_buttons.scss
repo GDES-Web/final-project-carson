@@ -1,5 +1,75 @@
-.btn {
+/* .smallbtn {
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 600;
+  font-size: 20px;
+  background-color: #F29F02;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px 20px;
+}
+ */
+
+/* CSS */
+.smallbtn {
+  appearance: button;
+  background-color: #482f00;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  text-decoration: none;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
+.smallbtn:after {
+  background-clip: padding-box;
+  background-color: #F29F02;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.smallbtn:focus {
+  user-select: auto;
+}
+
+.smallbtn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.smallbtn:disabled {
+  cursor: auto;
+}
