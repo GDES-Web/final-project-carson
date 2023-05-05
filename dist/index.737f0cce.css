@@ -122,9 +122,10 @@ svg {
 }
 
 .card-sec {
-  grid-column-gap: 10px;
+  max-width: 1000px;
   grid-template-columns: repeat(3, 3fr);
   justify-items: center;
+  margin: 0 auto;
   display: grid;
 }
 

@@ -164,8 +164,9 @@ svg {
 .card-sec {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
-  grid-column-gap: 10px;
   justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .card {
