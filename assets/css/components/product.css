@@ -1,0 +1,208 @@
+.product-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+.left-clm {
+  width: 65%;
+  position: relative;
+}
+
+.right-clm {
+  width: 35%;
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+.left-clm img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  padding-right: 60px;
+}
+
+.left-clm img.active {
+  opacity: 1;
+}
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+
+.product-description span {
+  font-size: 12px;
+  color: #333E40;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product-description h1 {
+  font-weight: 300;
+  color: #333E40;
+  letter-spacing: -2px;
+  font-size: 52px;
+}
+
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+/* Tee Sizes */
+.tee-size {
+  margin-bottom: 30px;
+}
+
+.size-choose div {
+  display: inline-block;
+}
+
+/* size config */
+.size-choose {
+  margin-bottom: 20px;
+}
+
+.size-choose button {
+  border: 2px solid #F29F02;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #F29F02;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.size-choose button:hover,
+.size-choose button:active,
+.size-choose button:focus {
+  border: 2px solid #F29F02;
+  outline: none;
+  background-color: #F29F02;
+  color: white;
+}
+
+.tee-size {
+  border-bottom: 1px solid #F29F02;
+  margin-bottom: 20px;
+}
+
+.tee-size a {
+  color: #F29F02;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.tee-size a:before {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid #F29F02;
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+.tee-price {
+  display: flex;
+  align-items: center;
+}
+
+.tee-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #333E40;
+  margin-right: 20px;
+}
+
+.smallbtn {
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.smallbtn:hover {
+  background-color: #F29F02;
+}
+
+/* Responsive */
+@media (max-width: 940px) {
+  .product-container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .left-clm,
+  .right-clm {
+    width: 100%;
+  }
+  .left-clm img {
+    width: 100%;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+  .right-clm {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 535px) {
+  .left-clm img {
+    width: 100%;
+    top: -85px;
+  }
+}
+/* Adjust for iPhone 12 Pro */
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .product-container {
+    padding: 5px;
+    margin-top: 30px;
+  }
+  .left-clm img {
+    top: -120px;
+  }
+  .product-description {
+    margin-top: 0;
+  }
+  .tee-price {
+    margin-top: 20px;
+  }
+  .smallbtn {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 535px) {
+  .left-clm img {
+    width: 100%;
+    top: -85px;
+  }
+  .product-description {
+    margin-top: 80px;
+  }
+  .right-clm .image-container {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .tee-price {
+    margin-top: 0;
+  }
+  .smallbtn {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=product.css.map */
