@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"aSk5W":[function(require,module,exports) {
+})({"gUqjy":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -558,6 +558,6 @@ function hmrAccept(bundle, id) {
 
 },{}],"j4kuM":[function(require,module,exports) {
 
-},{}]},["aSk5W","j4kuM"], "j4kuM", "parcelRequire0316")
+},{}]},["gUqjy","j4kuM"], "j4kuM", "parcelRequire0316")
 
 //# sourceMappingURL=sass-components-practice.3464ddca.js.map
