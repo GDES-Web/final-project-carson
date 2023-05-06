@@ -218,7 +218,6 @@ svg {
   }
 }
 .hero {
-  padding-bottom: 300px;
   position: relative;
   display: flex;
   align-items: center;
@@ -229,6 +228,21 @@ svg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  justify-content: center;
+}
+
+.hero-section-text {
+  color: white;
+  position: relative;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.hero-section-text h3 {
+  padding: 15px;
 }
 
 .card-sec {
@@ -266,30 +280,36 @@ svg {
 }
 
 .product-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 20px;
   display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 60px;
+  margin-top: 60px;
 }
 
 .left-clm {
-  width: 65%;
+  width: 75%;
   position: relative;
 }
 
 .right-clm {
-  width: 35%;
+  width: 25%;
   margin-top: 60px;
   flex-direction: column;
+  background-color: #cdcdcd;
 }
 
 .left-clm img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   position: absolute;
   left: 0;
   top: 0;
   transition: all 0.3s ease;
   padding-right: 60px;
+  border-radius: 60px;
 }
 
 .left-clm img.active {
@@ -366,7 +386,7 @@ svg {
 .tee-size a {
   color: #F29F02;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 18px;
   position: relative;
   margin: 10px 0;
   display: inline-block;
@@ -463,47 +483,55 @@ svg {
     font-size: 0.7rem;
   }
 }
-/* For screens with a maximum width of 390px and height of 844px */
-@media only screen and (max-width: 390px) and (max-height: 844px) {
-  .product-container {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .left-clm {
-    width: 100%;
-  }
-  .right-clm {
-    width: 100%;
-    margin-top: 5%;
-  }
+@media only screen and (max-width: 768px) {
   .left-clm img {
-    position: static;
-    width: 100%;
     padding-right: 0;
   }
-  .product-description h1 {
-    font-size: 1.5rem;
-    letter-spacing: -1px;
-  }
-  .product-description p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-  .tee-size a:before {
-    height: 1rem;
-    width: 1rem;
-    line-height: 1.1;
-    margin-right: 1%;
-  }
-  .tee-price span {
-    font-size: 1.3rem;
-    margin-right: 1%;
-  }
-  .size-choose button {
-    padding: 1% 2%;
-    font-size: 0.6rem;
-  }
 }
+footer {
+  background-color: #333E40;
+  padding: 50px 0;
+  color: #F29F02;
+  margin-top: 1rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer-column {
+  margin: 0 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #F29F02;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
 *,
 *:before,
 *:after {
@@ -522,14 +550,6 @@ body {
 /* Hero */
 .hero {
   background-image: url(../../images/hero.png);
-}
-
-.hero-section-text {
-  color: white;
-  position: relative;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
 }
 
 .logo-link {

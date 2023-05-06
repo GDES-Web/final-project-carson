@@ -7,6 +7,7 @@
 @import './components/hero';
 @import './components/card';
 @import './components/product.scss';
+@import './components/footer';
 
 
 *,
@@ -27,14 +28,6 @@ body {
 /* Hero */
 .hero {
     background-image: url(../../images/hero.png);
-}
-
-.hero-section-text {
-    color: white;
-    position: relative;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
 }
 
 .logo-link {

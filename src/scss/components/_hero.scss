@@ -2,7 +2,6 @@ $hero-height: 100vh;
 $hero-width: 100vw;
 
 .hero {
-    padding-bottom: 300px;
     position: relative;
     display: flex;
     align-items: center;
@@ -13,4 +12,19 @@ $hero-width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    justify-content: center;
+}
+
+.hero-section-text {
+    color: white;
+    position: relative;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.hero-section-text h3 {
+    padding: 15px;
 }
