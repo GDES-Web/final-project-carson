@@ -128,6 +128,10 @@ li {
   transition: color .2s ease-in-out;
 }
 
+.nav-link:hover {
+  color: #f29f02;
+}
+
 .brand {
   padding: 10px;
 }
