@@ -9,7 +9,17 @@
   font-size: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
-}
+
+    .cart {
+      color: #333E40;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        color: #F29F02;
+      }
+    }
+  }
+
 
 /* SVG Logo */
 .logo-link {
@@ -68,6 +78,7 @@
   .nav-links {
     font-size: 20px;
   }
+  
 }
 
 .hamburger {
@@ -90,7 +101,7 @@
 
 /* Responsive */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
@@ -115,6 +126,10 @@
   .nav-links.active {
     display: inline;
   }
-}
 
+  #cart {
+    margin-top: 1rem;
+  }
+
+}
   
