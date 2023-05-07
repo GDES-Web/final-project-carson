@@ -547,6 +547,9 @@
   .product-description {
     text-align: left;
   }
+  .product-description h1 {
+    font-size: 40px;
+  }
   .left-clm,
   .right-clm {
     display: flex;
