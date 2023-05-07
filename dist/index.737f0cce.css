@@ -56,157 +56,107 @@
   cursor: auto;
 }
 
-.navigation {
-  width: 100%;
-  background-color: #fffdfa;
-  position: relative;
-  box-shadow: 0 2px 4px #0003;
-}
-
-.nav-container {
+.navbar {
+  color: #333e40;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
   font-family: brandon-grotesque, sans-serif;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   display: flex;
+  box-shadow: 0 2px 4px #0003;
 }
 
 .logo-link {
-  text-decoration: none;
-  transition: color .2s ease-in-out;
-  display: block;
+  width: 260px;
 }
 
-#slicehaus {
-  width: 260px;
-  height: 57px;
-  fill: #000;
+.logo-link svg path {
+  fill: #333e40;
   transition: fill .2s ease-in-out;
 }
 
-#slicehaus:hover {
+.logo-link:hover svg path {
   fill: #f29f02;
 }
 
-.hamburger {
-  cursor: pointer;
-  background-color: #0000;
-  border: none;
-  outline: none;
-  margin-right: 1rem;
-  padding: 0;
-  display: none;
+@media (max-width: 400px) {
+  .logo-link {
+    width: 200px;
+  }
 }
 
-.hamburger-line {
-  width: 24px;
-  height: 2px;
-  background-color: #333e40;
-  margin: 6px auto;
-  transition: transform .2s ease-in-out, opacity .2s ease-in-out;
-  display: block;
-}
-
-.nav-list {
-  align-items: center;
+.nav-links ul {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-li {
-  padding: 10px;
-  list-style-type: none;
+.nav-links li {
+  padding: .5rem;
+  list-style: none;
+  display: block;
 }
 
-.nav-link {
+.nav-links li a {
   color: #333e40;
-  margin-top: 0;
-  font-size: 1.5rem;
   text-decoration: none;
-  transition: color .2s ease-in-out;
 }
 
-.nav-link:hover {
+.nav-links li a:hover {
   color: #f29f02;
 }
 
-.brand {
-  padding: 10px;
-}
-
-svg {
-  height: 56px;
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+@media (max-width: 400px) {
+  .nav-links {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 768px) and (max-width: 768px) {
-  .nav-list {
-    z-index: 1;
-    background-color: #fff;
-    flex-direction: column;
-    padding: 1rem;
-    position: absolute;
-    top: calc(100% + 20px);
-    right: 0;
-    box-shadow: 0 2px 4px #0003;
-  }
-
-  .brand {
-    order: -1;
-    margin-bottom: 1rem;
-  }
-
-  .nav-list.open {
-    flex-direction: column;
-    display: flex;
-    position: absolute;
-    top: calc(100% + 16px);
-    right: 0;
-  }
+.hamburger {
+  width: 31px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
 }
 
-@media (max-width: 768px) {
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #333e40;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
   .hamburger {
-    display: block;
-  }
-
-  .nav-link {
-    color: #333e40;
-    border-bottom: 1px solid #e1e8ee;
-    margin-top: 0;
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: color .2s ease-in-out;
-  }
-
-  .nav-link:last-of-type {
-    border-bottom: none;
-  }
-
-  .nav-list.open {
     display: flex;
   }
 
-  .hamburger.active .hamburger-line:first-of-type {
-    transform: translateY(8px)rotate(45deg);
+  .nav-links {
+    display: none;
   }
 
-  .hamburger.active .hamburger-line:nth-of-type(2) {
-    opacity: 0;
+  .navbar {
+    flex-direction: column;
   }
 
-  .hamburger.active .hamburger-line:last-of-type {
-    transform: translateY(-8px)rotate(-45deg);
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: inline;
   }
 }
 
@@ -509,8 +459,14 @@ footer {
   transform: translateX(-50%);
 }
 
-.icons i {
+.icons a {
+  color: #f29f02;
   padding: 10px;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #f6bb4f;
 }
 
 *, :before, :after {
@@ -527,19 +483,6 @@ html, body {
 
 .hero {
   background-image: url("hero.b8861e11.png");
-}
-
-.logo-link {
-  padding: 20px;
-}
-
-.logo-link svg path {
-  fill: #333e40;
-  transition: fill .2s ease-in-out;
-}
-
-.logo-link:hover svg path {
-  fill: #f29f02;
 }
 
 .btnsec {

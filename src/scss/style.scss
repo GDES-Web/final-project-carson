@@ -29,22 +29,6 @@ body {
 .hero {
     background-image: url(../../images/hero.png);
 }
-
-.logo-link {
-    padding: 20px;
-    /* Set the initial color of the path */
-    svg path {
-      fill: #333E40;
-      transition: fill 0.2s ease-in-out;
-    }
-    
-    /* Change the color of the path when hovering over the link */
-    &:hover {
-      svg path {
-        fill: #F29F02;
-      }
-    }
-  }
   
   /* button */
 .btnsec {
@@ -54,3 +38,4 @@ body {
   padding: 50px;
 }
   
+

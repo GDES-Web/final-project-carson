@@ -55,6 +55,12 @@ footer {
   display: flex;
 }
 
-.icons i {
+.icons a {
+  text-decoration: none;
+  color: #F29F02;
   padding: 10px;
+}
+
+.icons a:hover {
+  color: #f6bb4f;
 }
