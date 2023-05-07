@@ -26,11 +26,19 @@
       fill: #F29F02;
     }
   }
+
+  a {
+    height: 200px;
+  }
 }
 
 @media (max-width: 400px) {
   .logo-link {
     width: 200px;
+
+    svg {
+      padding-bottom: 0px;
+    }
   }
 }
 

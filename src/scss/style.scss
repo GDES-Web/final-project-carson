@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 html,
@@ -23,11 +24,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: $fonts;
-}
-
-/* Hero */
-.hero {
-    background-image: url(../../images/hero.png);
 }
   
   /* button */

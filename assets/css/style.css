@@ -103,10 +103,16 @@
 .logo-link:hover svg path {
   fill: #F29F02;
 }
+.logo-link a {
+  height: 200px;
+}
 
 @media (max-width: 400px) {
   .logo-link {
     width: 200px;
+  }
+  .logo-link svg {
+    padding-bottom: 0px;
   }
 }
 /* Nav Links */
@@ -176,33 +182,81 @@
   }
 }
 .hero {
-  position: relative;
+  height: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
-  height: 700px;
-  z-index: 1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   justify-content: center;
-}
-
-.hero-section-text {
-  color: white;
-  position: relative;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
   text-align: center;
-  border-radius: 15px;
 }
 
-.hero-section-text h3 {
-  padding: 15px;
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-image: url(../../images/hero.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 25%;
+}
+.hero-text h2 {
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 2px #000000;
+}
+.hero-text p {
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+@media (max-width: 850px) {
+  .hero {
+    height: 500px;
+  }
+  .hero::before {
+    height: 500px;
+  }
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 390px) {
+  .hero {
+    height: 200px;
+  }
+  .hero::before {
+    height: 200px;
+  }
+  .hero-text {
+    font-size: 0.6rem;
+    margin: 15%;
+    position: absolute;
+    width: 250px;
+  }
+  .hero-text h2 {
+    padding: 0;
+  }
+  .hero-text p {
+    padding-bottom: 20px;
+    font-size: 0.8rem;
+  }
+  .hero-text a {
+    font-size: 8px;
+    padding: 6px 8px;
+  }
+}
 .card-sec {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
@@ -490,6 +544,7 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 html,
@@ -497,11 +552,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: "brandon-grotesque", sans-serif;
-}
-
-/* Hero */
-.hero {
-  background-image: url(../../images/hero.png);
 }
 
 /* button */

@@ -82,9 +82,17 @@
   fill: #f29f02;
 }
 
+.logo-link a {
+  height: 200px;
+}
+
 @media (max-width: 400px) {
   .logo-link {
     width: 200px;
+  }
+
+  .logo-link svg {
+    padding-bottom: 0;
   }
 }
 
@@ -161,31 +169,75 @@
 }
 
 .hero {
-  height: 700px;
-  z-index: 1;
-  background-color: #fff0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 600px;
+  width: 100%;
+  text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
-  position: relative;
-  box-shadow: 0 4px 8px #0003;
 }
 
-.hero-section-text {
+.hero:before {
+  content: "";
+  width: 100%;
+  height: 600px;
+  opacity: .5;
+  background-image: url("hero.b8861e11.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.hero-text {
+  flex-direction: column;
+  align-items: center;
+  margin: 25%;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.hero-text h2, .hero-text p {
   color: #fff;
-  text-align: center;
-  background-color: #00000080;
-  border-radius: 15px;
-  padding: 20px;
+  text-shadow: 1px 1px 2px #000;
+  padding-bottom: 20px;
   position: relative;
-  top: 50%;
 }
 
-.hero-section-text h3 {
-  padding: 15px;
+@media (max-width: 850px) {
+  .hero, .hero:before {
+    height: 500px;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero, .hero:before {
+    height: 200px;
+  }
+
+  .hero-text {
+    width: 250px;
+    margin: 15%;
+    font-size: .6rem;
+    position: absolute;
+  }
+
+  .hero-text h2 {
+    padding: 0;
+  }
+
+  .hero-text p {
+    padding-bottom: 20px;
+    font-size: .8rem;
+  }
+
+  .hero-text a {
+    padding: 6px 8px;
+    font-size: 8px;
+  }
 }
 
 .card-sec {
@@ -473,16 +525,13 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 html, body {
   width: 100%;
   height: 100%;
   font-family: brandon-grotesque, sans-serif;
-}
-
-.hero {
-  background-image: url("hero.b8861e11.png");
 }
 
 .btnsec {
