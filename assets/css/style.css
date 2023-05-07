@@ -92,6 +92,7 @@
 .navbar .cart {
   color: #333E40;
   cursor: pointer;
+  position: relative;
   text-decoration: none;
 }
 .navbar .cart:hover {
@@ -151,9 +152,6 @@
 }
 .hamburger {
   position: absolute;
-  right: 1rem;
-  top: 0.75rem;
-  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 31px;
@@ -171,12 +169,20 @@
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    position: relative;
+  }
+  .navbar > .nav-links:nth-child(3) {
+    margin-bottom: 0;
   }
   .nav-links {
     display: none;
+    order: 2;
+    width: 100%;
   }
   .navbar {
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
   }
   .nav-links ul {
     width: 100%;
@@ -186,7 +192,8 @@
     text-align: center;
   }
   .nav-links.active {
-    display: inline;
+    display: flex;
+    flex-direction: column;
   }
   #cart {
     margin-top: 1rem;
