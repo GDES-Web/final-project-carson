@@ -1,14 +1,19 @@
 .product-container {
-    max-width: 1200px;
-    margin: 10%;
+    max-width: 534px;
+    border-radius: 60px;
+    margin: auto;
     padding: 20px;
     display: flex;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 60px;
+    box-shadow: 0 7px 29px #64646f33;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
 }
 
 .left-clm {
-    width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
@@ -50,6 +55,7 @@
     color: #333E40;
     letter-spacing: -2px;
     font-size: 52px;
+    text-align: center;
 }
 
 .product-description p {
@@ -146,7 +152,6 @@
 
 @media (max-width: 1200px) {
     .product-container {
-        margin: 10%;
         justify-content: center;
         display: flex;
     }

@@ -4,8 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .hero::before {
@@ -13,35 +14,28 @@
     position: absolute;
     width: 100%;
     height: 600px;
-    background-image: url(../../images/hero.png);
+    background-image: url(../../images/gorge.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 0.5;
 }
 
 
-/* .hero-text {
+.hero-text {
+    color: #F29F02;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
     margin: 25%;
+    position: relative;
+    justify-content: space-around;
 
-
-    h2 {
-        color: #ffffff;
-        position: relative;
-        padding-bottom: 20px;
+    p, h2, h3{
+        padding-bottom: 1rem;
         text-shadow: 1px 1px 2px #000000;
     }
-
-    p {
-        color: #ffffff;
-        position: relative;
-        padding-bottom: 20px;
-        text-shadow: 1px 1px 2px #000000;
-    }
-} */
+}
 
 
 
@@ -65,6 +59,8 @@
 }
 
 @media (max-width: 768px) {
+
+
     .hero {
         height: 300px;
     }
@@ -73,8 +69,8 @@
         height: 300px;
     }
 
-/*     .hero-text {
-        font-size: 1rem;
+    .hero-text {
+        font-size: .85rem;
         margin: 15%;
         position: absolute;
         width: 250px;
@@ -91,7 +87,7 @@
             font-size: 12px;
             padding: 10px 12px;
         }
-    } */
+    }
 }
 
 @media (max-width:390px) {
@@ -99,8 +95,8 @@
         height: 200px;
 
         a{
-            font-size: 10px;
-            padding: 8px 10px;
+            font-size: 8px;
+            padding: 6px 8px;
         }
     }
     
@@ -120,7 +116,7 @@
 
         p {
             padding-bottom: 20px;
-            font-size: .8rem;
+            font-size: .7rem;
         }
         
         a {

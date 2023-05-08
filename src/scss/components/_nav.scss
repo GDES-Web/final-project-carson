@@ -1,4 +1,5 @@
 .navbar {
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +10,20 @@
   font-size: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
+
+  img {
+    width: 90px;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: #333E40;
+    font-size: 1rem;
+    
+    &:hover {
+      color: #F29F02;
+    }
+  }
 
     .cart {
       color: #333E40;
@@ -63,7 +78,7 @@
 .nav-links li {
   list-style: none;
   display: block;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .nav-links li a {
