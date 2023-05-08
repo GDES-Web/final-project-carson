@@ -187,6 +187,28 @@
   }
 }
 
+.breadcrumb {
+  padding: 0 .5rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.breadcrumb ul {
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumb li:not(:last-child):after {
+  content: "→";
+  margin: 0 .25rem;
+  display: inline-block;
+}
+
 .hero {
   height: 600px;
   width: 100%;

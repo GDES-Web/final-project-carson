@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://use.typekit.net/zgf7eai.css");
 /* fonts */
 /* colors */
@@ -197,6 +198,28 @@
     margin-top: 1rem;
   }
 }
+.breadcrumb {
+  padding: 0 0.5rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: "→";
+}
+
 .hero {
   height: 600px;
   width: 100%;
