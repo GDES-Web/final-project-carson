@@ -240,7 +240,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
   display: flex;
 }
 
@@ -385,15 +384,17 @@
   padding-top: .5rem;
 }
 
+.product-div {
+  justify-content: center;
+  padding: 2rem;
+  display: flex;
+}
+
 .product-container {
   max-width: 534px;
   border-radius: 60px;
-  flex-direction: column;
-  justify-content: flex-end;
   margin: auto;
   padding: 20px;
-  display: flex;
-  position: relative;
   box-shadow: 0 7px 29px #64646f33;
 }
 
@@ -448,7 +449,6 @@
   color: #86939e;
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px;
 }
 
 .tee-size {
@@ -631,7 +631,11 @@
   }
 
   .product-description h1 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .product-description p {
+    font-size: 14px;
   }
 
   .left-clm, .right-clm {

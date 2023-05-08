@@ -248,7 +248,6 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-bottom: 60px;
 }
 
 .hero::before {
@@ -379,16 +378,18 @@
   padding-top: 0.5rem;
 }
 
+.product-div {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 .product-container {
   max-width: 534px;
   border-radius: 60px;
   margin: auto;
   padding: 20px;
-  display: flex;
   box-shadow: 0 7px 29px rgba(100, 100, 111, 0.2);
-  flex-direction: column;
-  position: relative;
-  justify-content: flex-end;
 }
 
 .left-clm {
@@ -443,7 +444,6 @@
   font-size: 16px;
   font-weight: 300;
   color: #86939E;
-  line-height: 24px;
 }
 
 /* Tee Sizes */
@@ -618,7 +618,10 @@
     text-align: left;
   }
   .product-description h1 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  .product-description p {
+    font-size: 14px;
   }
   .left-clm,
   .right-clm {
