@@ -212,7 +212,7 @@
 .hero {
   height: 600px;
   width: 100%;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -229,21 +229,6 @@
   position: absolute;
 }
 
-.hero-text {
-  flex-direction: column;
-  align-items: center;
-  margin: 25%;
-  font-size: 1.5rem;
-  display: flex;
-}
-
-.hero-text h2, .hero-text p {
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
-  padding-bottom: 20px;
-  position: relative;
-}
-
 @media (max-width: 820px) {
   .hero, .hero:before {
     height: 500px;
@@ -257,26 +242,6 @@
 @media (max-width: 768px) {
   .hero, .hero:before {
     height: 300px;
-  }
-
-  .hero-text {
-    width: 250px;
-    margin: 15%;
-    font-size: 1rem;
-    position: absolute;
-  }
-
-  .hero-text h2 {
-    padding: 0;
-  }
-
-  .hero-text p {
-    padding-bottom: 20px;
-  }
-
-  .hero-text a {
-    padding: 10px 12px;
-    font-size: 12px;
   }
 }
 
@@ -673,6 +638,70 @@ footer {
 
 .icons a:hover {
   color: #f6bb4f;
+}
+
+figure {
+  color: #fffdfa;
+  z-index: 9999;
+  text-shadow: 1px 1px 2px #000;
+  max-width: 600px;
+}
+
+figure figcaption {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+figure p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+figure cite {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  figure {
+    color: #fffdfa;
+    z-index: 9999;
+    text-shadow: 1px 1px 2px #000;
+    max-width: 300px;
+  }
+
+  figure figcaption {
+    font-size: 15px;
+  }
+
+  figure p {
+    font-size: 1.25rem;
+  }
+
+  figure cite {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  figure {
+    color: #fffdfa;
+    z-index: 9999;
+    text-shadow: 1px 1px 2px #000;
+    max-width: 250px;
+  }
+
+  figure figcaption {
+    font-size: 12px;
+  }
+
+  figure p {
+    font-size: .8rem;
+  }
+
+  figure cite {
+    font-size: 12px;
+  }
 }
 
 *, :before, :after {

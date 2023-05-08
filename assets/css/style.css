@@ -226,7 +226,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .hero::before {
@@ -240,26 +240,28 @@
   opacity: 0.5;
 }
 
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
-  margin: 25%;
-}
-.hero-text h2 {
-  color: #ffffff;
-  position: relative;
-  padding-bottom: 20px;
-  text-shadow: 1px 1px 2px #000000;
-}
-.hero-text p {
-  color: #ffffff;
-  position: relative;
-  padding-bottom: 20px;
-  text-shadow: 1px 1px 2px #000000;
-}
+/* .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 25%;
 
+
+    h2 {
+        color: #ffffff;
+        position: relative;
+        padding-bottom: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    p {
+        color: #ffffff;
+        position: relative;
+        padding-bottom: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+} */
 @media (max-width: 820px) {
   .hero {
     height: 500px;
@@ -278,22 +280,25 @@
   .hero::before {
     height: 300px;
   }
-  .hero-text {
-    font-size: 1rem;
-    margin: 15%;
-    position: absolute;
-    width: 250px;
-  }
-  .hero-text h2 {
-    padding: 0;
-  }
-  .hero-text p {
-    padding-bottom: 20px;
-  }
-  .hero-text a {
-    font-size: 12px;
-    padding: 10px 12px;
-  }
+  /*     .hero-text {
+          font-size: 1rem;
+          margin: 15%;
+          position: absolute;
+          width: 250px;
+
+          h2 {
+              padding: 0;
+          }
+
+          p {
+              padding-bottom: 20px;
+          }
+
+          a {
+              font-size: 12px;
+              padding: 10px 12px;
+          }
+      } */
 }
 @media (max-width: 390px) {
   .hero {
@@ -677,6 +682,61 @@ footer {
   color: #f6bb4f;
 }
 
+/* Blockquote */
+figure {
+  color: #FFFDFA;
+  z-index: 9999;
+  text-shadow: 1px 1px 2px #000000;
+  max-width: 600px;
+}
+figure figcaption {
+  font-size: 20px;
+  font-weight: 400;
+}
+figure p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+figure cite {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Responsiveness Descending */
+@media (max-width: 768px) {
+  figure {
+    color: #FFFDFA;
+    z-index: 9999;
+    text-shadow: 1px 1px 2px #000000;
+    max-width: 300px;
+  }
+  figure figcaption {
+    font-size: 15px;
+  }
+  figure p {
+    font-size: 1.25rem;
+  }
+  figure cite {
+    font-size: 15px;
+  }
+}
+@media (max-width: 390px) {
+  figure {
+    color: #FFFDFA;
+    z-index: 9999;
+    text-shadow: 1px 1px 2px #000000;
+    max-width: 250px;
+  }
+  figure figcaption {
+    font-size: 12px;
+  }
+  figure p {
+    font-size: 0.8rem;
+  }
+  figure cite {
+    font-size: 12px;
+  }
+}
 *,
 *:before,
 *:after {
