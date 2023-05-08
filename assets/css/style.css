@@ -298,10 +298,11 @@
   }
 }
 .card-sec {
-  display: grid;
-  justify-items: center;
-  max-width: 1000px;
+  justify-content: space-around;
   margin: 0 auto;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 .card {
