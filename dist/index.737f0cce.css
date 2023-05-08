@@ -187,33 +187,6 @@
   }
 }
 
-.breadcrumb {
-  padding: 0 .5rem;
-}
-
-.breadcrumb a {
-  color: #333e40;
-  text-decoration: none;
-}
-
-.breadcrumb a:hover {
-  color: #f29f02;
-}
-
-.breadcrumb ul {
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-
-.breadcrumb li:not(:last-child):after {
-  content: "→";
-  margin: 0 .25rem;
-  display: inline-block;
-}
-
 .hero {
   height: 600px;
   width: 100%;
@@ -280,8 +253,8 @@
   }
 
   .hero-text a {
-    padding: 6px 8px;
-    font-size: 8px;
+    padding: 10px 12px;
+    font-size: 12px;
   }
 }
 
