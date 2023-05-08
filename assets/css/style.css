@@ -385,11 +385,11 @@
 }
 
 .product-container {
-  max-width: 534px;
+  width: 100%;
   border-radius: 60px;
-  margin: auto;
   padding: 20px;
-  box-shadow: 0 7px 29px rgba(100, 100, 111, 0.2);
+  background-color: #ffffff;
+  margin: 0;
 }
 
 .left-clm {
@@ -570,6 +570,9 @@
   }
   .product-description {
     text-align: left;
+  }
+  .product-description h1 {
+    font-size: 40px;
   }
   .left-clm,
   .right-clm {
