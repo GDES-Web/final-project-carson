@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     text-align: left;
+    flex-direction: column;
 }
 
 .hero::before {
@@ -47,6 +48,11 @@
 @media (max-width:820px) {
     .hero{
         height: 500px;
+
+        a{
+            font-size: 12px;
+            padding: 10px 12px;
+        }
     }
     
     .hero::before {
@@ -91,6 +97,11 @@
 @media (max-width:390px) {
     .hero {
         height: 200px;
+
+        a{
+            font-size: 10px;
+            padding: 8px 10px;
+        }
     }
     
     .hero::before {
