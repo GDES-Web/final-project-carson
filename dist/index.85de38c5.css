@@ -809,8 +809,8 @@ figure cite {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  font-size: 1rem;
+  padding: 4rem 1rem;
+  font-size: 1.1rem;
   display: flex;
   overflow: hidden;
 }
@@ -824,6 +824,41 @@ figure cite {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+  }
+
+  .section-content .content {
+    width: 100%;
+    font-size: .8rem;
+  }
+
+  .section-content .content h2 {
+    text-align: center;
+  }
+
+  .section-content .content p {
+    width: 75%;
+  }
+
+  .section-content .img-right {
+    width: 100%;
+  }
+
+  .section-style {
+    max-height: 75vh;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .section-content .content {
+    color: #fff;
+    padding: 1rem .5rem;
+    font-size: .7rem;
+  }
 }
 
 *, :before, :after {

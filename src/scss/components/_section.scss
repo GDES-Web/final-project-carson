@@ -12,9 +12,9 @@
 .content {
     width: 50%;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     overflow-wrap: normal;
-    padding: 4rem;
+    padding: 4rem 1rem;
     background-color: #F29F02;
     color: white;
     overflow: hidden;
@@ -31,5 +31,48 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+    }
+}
+
+
+/* Responsive Tablet */
+
+@media screen and (max-width:768px) {
+    .section-content {
+        flex-direction: column;
+
+        .content {
+            width: 100%;
+            font-size: .80rem;
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                width: 75%;
+            }
+        }
+
+        .img-right {
+            width: 100%;
+        }
+    }
+
+    .section-style {
+        max-height: 75vh;
+    }
+}
+
+/* Responsive Phone */
+
+@media screen and (max-width: 390px) {
+    .section-content{
+
+        .content {
+            font-size: .70rem;
+            color: #ffffff;
+            padding: 1rem .5rem;
+        }
     }
 }

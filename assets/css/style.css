@@ -774,9 +774,9 @@ figure cite {
 .content {
   width: 50%;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   overflow-wrap: normal;
-  padding: 4rem;
+  padding: 4rem 1rem;
   background-color: #F29F02;
   color: white;
   overflow: hidden;
@@ -795,6 +795,36 @@ figure cite {
   height: 100%;
 }
 
+/* Responsive Tablet */
+@media screen and (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+  }
+  .section-content .content {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .section-content .content h2 {
+    text-align: center;
+  }
+  .section-content .content p {
+    width: 75%;
+  }
+  .section-content .img-right {
+    width: 100%;
+  }
+  .section-style {
+    max-height: 75vh;
+  }
+}
+/* Responsive Phone */
+@media screen and (max-width: 390px) {
+  .section-content .content {
+    font-size: 0.7rem;
+    color: #ffffff;
+    padding: 1rem 0.5rem;
+  }
+}
 *,
 *:before,
 *:after {
