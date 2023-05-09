@@ -380,8 +380,6 @@
 
 .product-div {
   padding: 2rem;
-  display: flex;
-  justify-content: center;
 }
 
 .product-container {
@@ -390,6 +388,8 @@
   padding: 20px;
   background-color: #ffffff;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .left-clm {
@@ -400,10 +400,8 @@
 }
 
 .right-clm {
-  width: 25%;
-  margin-top: 60px;
+  width: 50%;
   flex-direction: column;
-  background-color: #cdcdcd;
 }
 
 .left-clm img {
@@ -537,9 +535,8 @@
   .product-description {
     text-align: left;
   }
-  .left-clm,
   .right-clm {
-    width: 100%;
+    width: 50%;
   }
   .left-clm img {
     width: 300px;
@@ -562,7 +559,6 @@
 /* iPad */
 @media (max-width: 768px) {
   .product-container {
-    margin: 10%;
     justify-content: center;
     display: flex;
     flex-direction: column;
