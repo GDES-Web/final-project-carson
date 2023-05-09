@@ -1,0 +1,30 @@
+.schedule {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    ul {
+        color: #F29F02;
+    }
+
+    padding: 1rem;
+}
+
+/* Side by Side List */
+.schedule-days{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    ul {
+        line-height: 30px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .schedule-days {
+        flex-direction: column;
+        line-height: 20px;
+    }
+}

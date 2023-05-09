@@ -861,6 +861,35 @@ figure cite {
   }
 }
 
+.schedule {
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.schedule ul {
+  color: #f29f02;
+}
+
+.schedule-days {
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.schedule-days ul {
+  padding: 1rem;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-days {
+    flex-direction: column;
+    line-height: 20px;
+  }
+}
+
 *, :before, :after {
   box-sizing: border-box;
   margin: 0;

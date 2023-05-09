@@ -825,6 +825,33 @@ figure cite {
     padding: 1rem 0.5rem;
   }
 }
+.schedule {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+.schedule ul {
+  color: #F29F02;
+}
+
+/* Side by Side List */
+.schedule-days {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.schedule-days ul {
+  line-height: 30px;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-days {
+    flex-direction: column;
+    line-height: 20px;
+  }
+}
 *,
 *:before,
 *:after {
