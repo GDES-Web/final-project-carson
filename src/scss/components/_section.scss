@@ -14,13 +14,18 @@
     align-items: center;
     font-size: 1.1rem;
     overflow-wrap: normal;
-    padding: 4rem 1rem;
+    padding: 5rem 3rem;
     background-color: #F29F02;
     color: white;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
 }
 
 .img-right {
@@ -33,6 +38,7 @@
         height: 100%;
     }
 }
+
 
 
 /* Responsive Tablet */
@@ -73,6 +79,10 @@
             font-size: .70rem;
             color: #ffffff;
             padding: 1rem .5rem;
+
+            h1 {
+                font-size: 2rem;
+            }
         }
     }
 }

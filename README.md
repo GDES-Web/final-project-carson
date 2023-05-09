@@ -43,7 +43,6 @@ Artists Section:
 - List of Featured Artists or Performers
 - Names
 - Photos
-- Brief Biographies
 
 Sponsors Section:
 - List of Sponsors

@@ -241,7 +241,7 @@
 }
 
 .hero {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -254,15 +254,15 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-image: url(../../images/gorge.jpeg);
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .hero-text {
-  color: #F29F02;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,72 +343,78 @@
   }
 }
 .card-sec {
-  justify-content: space-around;
-  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
   display: flex;
-  margin: 0;
+  width: 100%;
+  background-color: #F29F02;
+  padding: 2rem;
+}
+.card-sec h1 {
+  color: #FFFDFA;
+}
+
+.cards {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 1rem;
 }
 
 .card {
-  display: grid;
-  grid-template-rows: max-content 300px 1fr;
-  border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 300px;
+  margin: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.card figure {
+  width: 100%;
+  height: 80%;
+}
 .card h2 {
   padding: 0.5rem;
+  color: #F29F02;
 }
 
 .card img {
   object-fit: cover;
   width: 100%;
-  height: 30vh;
-  object-position: center;
+  height: 100%;
 }
 
-.button {
-  padding-top: 0.5rem;
-}
-
-.product-div {
+.ticket-sec {
+  display: flex;
+  justify-content: space-evenly;
   padding: 2rem;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ticket-sec h1 {
+  font-size: 4rem;
 }
 
 .product-container {
-  width: 100%;
-  border-radius: 60px;
+  max-width: 450px;
   padding: 20px;
-  background-color: #ffffff;
-  margin: 0;
   display: flex;
   justify-content: center;
-}
-
-.left-clm {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 60px;
+  margin: 2rem;
 }
 
 .right-clm {
-  width: 50%;
+  width: 25%;
+  margin-top: 60px;
   flex-direction: column;
-}
-
-.left-clm img {
-  left: 0;
-  top: 0;
-  transition: all 0.3s ease;
-  width: 363px;
-  margin: 1rem;
-}
-
-.left-clm img.active {
-  opacity: 1;
+  background-color: #cdcdcd;
 }
 
 /* Product Description */
@@ -417,98 +423,32 @@
   margin-bottom: 20px;
 }
 
-.product-description span {
-  font-size: 12px;
-  color: #333E40;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .product-description h1 {
   font-weight: 300;
   color: #333E40;
   letter-spacing: -2px;
-  font-size: 52px;
-  text-align: center;
+  font-size: 45px;
 }
 
 .product-description p {
   font-size: 16px;
   font-weight: 300;
   color: #86939E;
+  line-height: 24px;
 }
 
-/* Tee Sizes */
-.tee-size {
-  margin-bottom: 30px;
-}
-
-.size-choose div {
-  display: inline-block;
-}
-
-/* size config */
-.size-choose {
-  margin-bottom: 20px;
-}
-
-.size-choose button {
-  border: 2px solid #F29F02;
-  border-radius: 6px;
-  padding: 13px 20px;
-  font-size: 20px;
-  color: #F29F02;
-  background-color: white;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.size-choose button:hover,
-.size-choose button:active,
-.size-choose button:focus {
-  border: 2px solid #F29F02;
-  outline: none;
-  background-color: #F29F02;
-  color: white;
-}
-
-.tee-size {
-  border-bottom: 1px solid #F29F02;
-  margin-bottom: 20px;
-}
-
-.tee-size a {
-  color: #F29F02;
-  text-decoration: none;
-  font-size: 18px;
-  position: relative;
-  margin: 10px 0;
-  display: inline-block;
-}
-
-.tee-size a:before {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  border: 2px solid #F29F02;
-  display: inline-block;
-  text-align: center;
-  line-height: 16px;
-  opacity: 0.5;
-  margin-right: 5px;
-}
-
-.tee-price {
+.tick-price {
   display: flex;
   align-items: center;
 }
 
-.tee-price span {
+.tick-price span {
   font-size: 26px;
   font-weight: 300;
   color: #333E40;
-  margin-right: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .smallbtn {
@@ -531,7 +471,7 @@
     text-align: left;
   }
   .right-clm {
-    width: 50%;
+    width: 100%;
   }
   .left-clm img {
     width: 300px;
@@ -539,20 +479,18 @@
     left: initial;
     border-radius: 10px;
   }
-  .tee-price {
+  .tick-price {
     justify-content: center;
-  }
-  .size-choose {
-    justify-content: space-evenly;
-    display: flex;
-    width: 100%;
-  }
-  .tee-size .size-choose {
-    display: flex;
   }
 }
 /* iPad */
 @media (max-width: 768px) {
+  .ticket-sec {
+    padding: 0.5rem;
+  }
+  .ticket-sec h1 {
+    font-size: 3rem;
+  }
   .product-container {
     justify-content: center;
     display: flex;
@@ -561,9 +499,6 @@
   }
   .product-description {
     text-align: left;
-  }
-  .product-description h1 {
-    font-size: 40px;
   }
   .left-clm,
   .right-clm {
@@ -577,45 +512,35 @@
     left: initial;
     border-radius: 10px;
   }
-  .tee-price {
+  .tick-price {
     justify-content: center;
     width: 100%;
   }
-  .size-choose {
-    justify-content: space-evenly;
-    display: flex;
-    width: 100%;
-  }
-  .tee-size .size-choose {
+  .tick-size {
     display: flex;
     transform: scale(1);
   }
-  .size-choose button {
-    font-size: 25px;
-  }
-}
-@media (max-width: 520px) {
-  .size-choose button {
-    font-size: 12px;
-  }
 }
 /* iphone 12 */
-@media (max-width: 390px) {
+@media (max-width: 420px) {
+  .ticket-sec {
+    padding: 0;
+  }
+  .ticket-sec h1 {
+    font-size: 2rem;
+  }
   .product-container {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 0;
+    max-width: 310px;
   }
   .product-description {
     text-align: left;
   }
   .product-description h1 {
-    font-size: 30px;
-  }
-  .product-description p {
-    font-size: 14px;
+    font-size: 40px;
   }
   .left-clm,
   .right-clm {
@@ -628,18 +553,9 @@
     left: initial;
     border-radius: 10px;
   }
-  .tee-price {
+  .tick-price {
     justify-content: center;
     width: 100%;
-  }
-  .size-choose {
-    justify-content: space-evenly;
-    display: flex;
-    width: 100%;
-    transform: scale(0.75);
-  }
-  .size-choose button {
-    font-size: 20px;
   }
 }
 footer {
@@ -704,63 +620,6 @@ footer {
   color: #f6bb4f;
 }
 
-/* Blockquote */
-figure {
-  color: #FFFDFA;
-  z-index: 9999;
-  max-width: 600px;
-}
-figure figcaption {
-  font-size: 20px;
-  font-weight: 400;
-  text-shadow: 1px 1px 2px #000000;
-}
-figure p {
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: 1px 1px 2px #000000;
-}
-figure cite {
-  font-size: 20px;
-  font-weight: 400;
-  text-shadow: 1px 1px 2px #000000;
-}
-
-/* Responsiveness Descending */
-@media (max-width: 768px) {
-  figure {
-    color: #FFFDFA;
-    z-index: 9999;
-    text-shadow: 1px 1px 2px #000000;
-    max-width: 300px;
-  }
-  figure figcaption {
-    font-size: 15px;
-  }
-  figure p {
-    font-size: 1.25rem;
-  }
-  figure cite {
-    font-size: 15px;
-  }
-}
-@media (max-width: 390px) {
-  figure {
-    color: #FFFDFA;
-    z-index: 9999;
-    text-shadow: 1px 1px 2px #000000;
-    max-width: 250px;
-  }
-  figure figcaption {
-    font-size: 12px;
-  }
-  figure p {
-    font-size: 0.75rem;
-  }
-  figure cite {
-    font-size: 12px;
-  }
-}
 .section-style {
   max-height: 50vh;
   display: flex;
@@ -776,13 +635,17 @@ figure cite {
   align-items: center;
   font-size: 1.1rem;
   overflow-wrap: normal;
-  padding: 4rem 1rem;
+  padding: 5rem 3rem;
   background-color: #F29F02;
   color: white;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.content h1 {
+  font-size: 5rem;
+  text-align: center;
 }
 
 .img-right {
@@ -824,6 +687,9 @@ figure cite {
     color: #ffffff;
     padding: 1rem 0.5rem;
   }
+  .section-content .content h1 {
+    font-size: 2rem;
+  }
 }
 .schedule {
   display: flex;
@@ -850,6 +716,71 @@ figure cite {
   .schedule-days {
     flex-direction: column;
     line-height: 20px;
+  }
+}
+.spon-section-style {
+  max-height: 50vh;
+}
+
+.spon-section-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.spon-content {
+  width: 100%;
+  align-items: center;
+  font-size: 1.1rem;
+  overflow-wrap: normal;
+  padding: 5rem 3rem;
+  background-color: #F29F02;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.spon-content h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.cards-spon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.card-spon {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 300px;
+  margin: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-spon figure {
+  width: 100%;
+  height: 80%;
+}
+.card-spon h2 {
+  padding: 0.5rem;
+  color: #F29F02;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 450px) {
+  .spon-content h1 {
+    font-size: 3rem;
   }
 }
 *,

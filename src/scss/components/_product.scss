@@ -1,40 +1,38 @@
-.product-div {
+.ticket-sec {
+    display: flex;
+    justify-content: space-evenly;
     padding: 2rem;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h1 {
+        font-size: 4rem;
+    }
 }
+
+@media screen and (max-width: 620px) {
+    
+}
+
 
 .product-container {
-    width: 100%;
-    border-radius: 60px;
+    max-width: 450px;
     padding: 20px;
-    background-color: #ffffff;
-    margin: 0;
     display: flex;
     justify-content: center;
-}
-
-.left-clm {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 60px;
+    margin: 2rem;
 }
 
 .right-clm {
-    width: 50%;
+    width: 25%;
+    margin-top: 60px;
     flex-direction: column;
+    background-color: #cdcdcd;
 }
 
-.left-clm img {
-    left: 0;
-    top: 0;
-    transition: all 0.3s ease;
-    width: 363px;
-    margin: 1rem;
-}
-
-.left-clm img.active {
-    opacity: 1;
-  }
 
   /* Product Description */
   .product-description {
@@ -42,99 +40,32 @@
     margin-bottom: 20px;
   }
 
-.product-description span {
-    font-size: 12px;
-    color: #333E40;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
 .product-description h1 {
     font-weight: 300;
     color: #333E40;
     letter-spacing: -2px;
-    font-size: 52px;
-    text-align: center;
+    font-size: 45px;
 }
 
 .product-description p {
     font-size: 16px;
     font-weight: 300;
     color: #86939E;
+    line-height: 24px;
   }
 
-  /* Tee Sizes */
-
-  .tee-size {
-    margin-bottom: 30px;
-  }
-
-  .size-choose div {
-    display: inline-block;
-  }
-
-  /* size config */
-.size-choose {
-    margin-bottom: 20px;
-}
-
-.size-choose button {
-    border: 2px solid #F29F02;
-    border-radius: 6px;
-    padding: 13px 20px;
-    font-size: 20px;
-    color: #F29F02;
-    background-color: white;
-    cursor: pointer;
-    transition: all .5s;
-}
-
-.size-choose button:hover,
-.size-choose button:active,
-.size-choose button:focus {
-    border: 2px solid #F29F02;
-    outline: none;
-    background-color: #F29F02;
-    color: white;
-}
-
-.tee-size {
-    border-bottom: 1px solid #F29F02;
-    margin-bottom: 20px;
-}
-
-.tee-size a {
-    color: #F29F02;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    margin: 10px 0;
-    display: inline-block;
-}
-
-.tee-size a:before {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: 2px solid #F29F02;
-    display: inline-block;
-    text-align: center;
-    line-height: 16px;
-    opacity: 0.5;
-    margin-right: 5px;
-}
-
-.tee-price {
+.tick-price {
     display: flex;
     align-items: center;
 }
 
-.tee-price span {
+.tick-price span {
     font-size: 26px;
     font-weight: 300;
     color: #333E40;
-    margin-right: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .smallbtn {
@@ -160,7 +91,7 @@
     }
 
     .right-clm {
-        width: 50%;
+        width: 100%;
     }
 
     .left-clm img {
@@ -170,24 +101,22 @@
         border-radius: 10px;
     }
     
-    .tee-price {
+    .tick-price {
         justify-content: center;
-    }
-
-    .size-choose {
-        justify-content: space-evenly;
-        display: flex;
-        width: 100%;
-    }
-
-    .tee-size .size-choose {
-        display: flex;
     }
 }
 
 /* iPad */
 
 @media (max-width: 768px) {
+    .ticket-sec {
+        padding: .5rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
     .product-container {
         justify-content: center;
         display: flex;
@@ -197,10 +126,6 @@
 
     .product-description {
         text-align: left;
-
-        h1 {
-            font-size: 40px;
-        }
     }
 
     .left-clm,
@@ -217,54 +142,43 @@
         border-radius: 10px;
     }
     
-    .tee-price {
+    .tick-price {
         justify-content: center;
         width: 100%;
     }
 
-    .size-choose {
-        justify-content: space-evenly;
-        display: flex;
-        width: 100%;
-    }
-
-    .tee-size .size-choose {
+    .tick-size {
         display: flex;
         transform: scale(1);
-    }
-
-    .size-choose button {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 520px) {
-    .size-choose button {
-        font-size: 12px;
     }
 }
 
 
 /* iphone 12 */
 
-@media (max-width: 390px) {
+@media (max-width: 420px) {
+    
+    .ticket-sec {
+        padding: 0;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    
     .product-container {
         justify-content: flex-start;
         display: flex;
         flex-direction: column;
-        width: 100%;
         margin: 0;
+        max-width: 310px;
     }
 
     .product-description {
         text-align: left;
 
         h1 {
-            font-size: 30px
-        }
-
-        p {
-            font-size: 14px;
+            font-size: 40px
         }
     }
 
@@ -281,20 +195,9 @@
         border-radius: 10px;
     }
     
-    .tee-price {
+    .tick-price {
         justify-content: center;
         width: 100%;
-    }
-
-    .size-choose {
-        justify-content: space-evenly;
-        display: flex;
-        width: 100%;
-        transform: scale(.75);
-
-        button {
-            font-size: 20px;
-        }
     }
 
 }
