@@ -1,5 +1,5 @@
 .hero {
-    height: 600px;
+    height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 50vh;
     background-image: url(../../images/gorge.jpeg);
     background-size: cover;
     background-position: center;
@@ -26,9 +26,9 @@
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
-    margin: 25%;
     position: relative;
     justify-content: space-around;
+    width: 75%;
 
     p, h2, h3{
         padding-bottom: 1rem;
@@ -70,7 +70,6 @@
 
     .hero-text {
         font-size: .85rem;
-        margin: 15%;
         position: absolute;
         width: 250px;
 
@@ -105,7 +104,6 @@
 
     .hero-text {
         font-size: .6rem;
-        margin: 15%;
         position: absolute;
         width: 250px;
 

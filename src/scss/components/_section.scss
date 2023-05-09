@@ -1,0 +1,35 @@
+
+.section-style {
+    max-height: 50vh;
+    display: flex;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 50%;
+    align-items: center;
+    font-size: 1rem;
+    overflow-wrap: normal;
+    padding: 4rem;
+    background-color: #F29F02;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-right {
+    width: 50%;
+    overflow: hidden;
+    
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

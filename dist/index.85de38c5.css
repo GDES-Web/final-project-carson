@@ -234,7 +234,7 @@
 }
 
 .hero {
-  height: 600px;
+  height: 50vh;
   width: 100%;
   text-align: center;
   flex-direction: column;
@@ -246,7 +246,7 @@
 .hero:before {
   content: "";
   width: 100%;
-  height: 600px;
+  height: 50vh;
   opacity: .5;
   background-image: url("gorge.7eefd1bd.jpeg");
   background-position: center;
@@ -256,10 +256,10 @@
 
 .hero-text {
   color: #f29f02;
+  width: 75%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 25%;
   font-size: 1.5rem;
   display: flex;
   position: relative;
@@ -296,7 +296,6 @@
 
   .hero-text {
     width: 250px;
-    margin: 15%;
     font-size: .85rem;
     position: absolute;
   }
@@ -331,7 +330,6 @@
 
   .hero-text {
     width: 250px;
-    margin: 15%;
     font-size: .6rem;
     position: absolute;
   }
@@ -359,9 +357,9 @@
 }
 
 .card {
-  max-width: 300px;
+  width: 50%;
   border-radius: 20px;
-  grid-template-rows: max-content 200px 1fr;
+  grid-template-rows: max-content 300px 1fr;
   display: grid;
   box-shadow: 0 7px 29px #64646f33;
 }
@@ -372,12 +370,9 @@
 
 .card img {
   object-fit: cover;
-  height: 100%;
-}
-
-.content {
-  object-fit: fill;
-  padding: 20px;
+  width: 100%;
+  height: 30vh;
+  object-position: center;
 }
 
 .button {
@@ -794,6 +789,41 @@ figure cite {
   figure cite {
     font-size: 12px;
   }
+}
+
+.section-style {
+  max-height: 50vh;
+  display: flex;
+}
+
+.section-content {
+  flex-direction: row;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  overflow-wrap: normal;
+  color: #fff;
+  background-color: #f29f02;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  font-size: 1rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.img-right {
+  width: 50%;
+  overflow: hidden;
+}
+
+.img-right img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 *, :before, :after {
