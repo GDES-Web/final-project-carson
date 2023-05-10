@@ -1,3 +1,7 @@
+.schedule-section {
+    padding: 3rem 0rem;
+}
+
 .schedule {
     display: flex;
     justify-content: center;
@@ -6,14 +10,12 @@
     ul {
         color: #F29F02;
     }
-
-    padding: 1rem;
 }
 
 /* Side by Side List */
 .schedule-days{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
 
     ul {

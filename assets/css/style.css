@@ -369,7 +369,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 75vw;
   padding: 1rem;
 }
 
@@ -416,7 +416,6 @@
   display: flex;
   justify-content: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 60px;
   margin: 2rem;
 }
 
@@ -666,11 +665,11 @@ footer {
 
 .content {
   width: 50%;
-  font-size: 1.75rem;
   overflow-wrap: normal;
-  padding: 4rem 2rem;
-  background-color: #F29F02;
-  color: white;
+  color: #fff;
+  background-color: #f29f02;
+  padding: 5rem 3.5rem;
+  font-size: 1.4rem;
   overflow: hidden;
 }
 .content h1 {
@@ -702,7 +701,7 @@ footer {
 
 @media screen and (max-width: 1100px) {
   .content {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 /* Responsive Tablet */
@@ -718,9 +717,6 @@ footer {
   .section-content .content h2 {
     text-align: center;
   }
-  .section-content .content p {
-    width: 75%;
-  }
   .section-content .img-right {
     width: 100%;
   }
@@ -733,17 +729,20 @@ footer {
   .section-content .content {
     font-size: 0.7rem;
     color: #ffffff;
-    padding: 1rem 0.5rem;
+    padding: 1rem 2.5rem;
   }
   .section-content .content h1 {
     font-size: 2rem;
   }
 }
+.schedule-section {
+  padding: 3rem 0rem;
+}
+
 .schedule {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 1rem;
 }
 .schedule ul {
   color: #F29F02;
@@ -752,7 +751,7 @@ footer {
 /* Side by Side List */
 .schedule-days {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
 }
 .schedule-days ul {
@@ -797,7 +796,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 75vw;
   padding: 1rem;
 }
 

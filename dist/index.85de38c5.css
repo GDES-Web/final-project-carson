@@ -374,7 +374,7 @@
 }
 
 .cards {
-  width: 100vw;
+  width: 75vw;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1rem;
@@ -422,7 +422,6 @@
 
 .product-container {
   max-width: 450px;
-  border-radius: 60px;
   justify-content: center;
   margin: 2rem;
   padding: 20px;
@@ -695,8 +694,8 @@ footer {
   overflow-wrap: normal;
   color: #fff;
   background-color: #f29f02;
-  padding: 4rem 2rem;
-  font-size: 1.75rem;
+  padding: 5rem 3.5rem;
+  font-size: 1.4rem;
   overflow: hidden;
 }
 
@@ -731,7 +730,7 @@ footer {
 
 @media screen and (max-width: 1100px) {
   .content {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -750,10 +749,6 @@ footer {
     text-align: center;
   }
 
-  .section-content .content p {
-    width: 75%;
-  }
-
   .section-content .img-right {
     width: 100%;
   }
@@ -766,7 +761,7 @@ footer {
 @media screen and (max-width: 390px) {
   .section-content .content {
     color: #fff;
-    padding: 1rem .5rem;
+    padding: 1rem 2.5rem;
     font-size: .7rem;
   }
 
@@ -775,10 +770,13 @@ footer {
   }
 }
 
+.schedule-section {
+  padding: 3rem 0;
+}
+
 .schedule {
   text-align: center;
   justify-content: center;
-  padding: 1rem;
   display: flex;
 }
 
@@ -788,7 +786,7 @@ footer {
 
 .schedule-days {
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: center;
   display: flex;
 }
 
@@ -833,7 +831,7 @@ footer {
 }
 
 .cards-spon {
-  width: 100vw;
+  width: 75vw;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1rem;
